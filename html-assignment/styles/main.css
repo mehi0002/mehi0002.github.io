@@ -42,7 +42,12 @@ a:link{
     border-radius: 10px;
 }
 
-a:active, a:visited, a:hover{
+a:visited{
     color: #F08A4B;
     text-decoration: none;
+}
+
+a:hover{
+    background-color: #C8D455;
+    color: #333333;
 }
