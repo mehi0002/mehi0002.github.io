@@ -20,3 +20,18 @@ header, footer{
 ul{
     list-style: square;
 }
+
+h2, h3{
+    color: #008F86;
+    font-family: 'Teko', sans-serif;
+    font-size: 200%;
+}
+
+#image-heading{
+    font-family: 'Teko', sans-serif;
+    font-size: 200%;
+}
+
+a:active{
+    color: #B3C414;
+}
