@@ -18,7 +18,7 @@ header, footer{
 }
 
 .site-title{
-    color: #A0C116;
+    color: #86BF17;
     text-transform: uppercase;
     font-family: 'Graphik Arts';
     font-size: 40pt;
@@ -51,9 +51,9 @@ h3{
 }
 
 a:link{
-    background-color: #333333;
-    color: #C8D455;
-    border: 1px solid #C8D455;
+    background-color: #222222;
+    color: #86BF17;
+    border: 1px solid #86BF17;
     text-decoration: none;
     display: inline-block;
     padding: 5px;
@@ -62,11 +62,11 @@ a:link{
 }
 
 a:visited{
-    color: #F08A4B;
+    color: #008F86;
     text-decoration: none;
 }
 
 a:hover{
-    background-color: #C8D455;
-    color: #333333;
+    background-color: #86BF17;
+    color: #222222;
 }
