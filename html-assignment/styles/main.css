@@ -7,6 +7,8 @@ body{
 
 header, footer{
     background-color: black;
+    padding: 10px;
+    border-radius: 10px;;
 }
 
 .site-title{
@@ -21,10 +23,21 @@ ul{
     list-style: square;
 }
 
-h2, h3{
+h1, h2, h3{
     color: #008F86;
     font-family: 'Teko', sans-serif;
-    font-size: 200%;
+}
+
+h1{
+    font-size: 350%;
+}
+
+h2{
+    font-size: 250%;
+}
+
+h3{
+    font-size: 150%;
 }
 
 #image-heading{
@@ -35,10 +48,11 @@ h2, h3{
 a:link{
     background-color: #333333;
     color: #C8D455;
+    border: 1px solid #C8D455;
     text-decoration: none;
     display: inline-block;
     padding: 5px;
-    margin: 5px 0px 5px 5px;
+    margin: 5px 5px 5px 0px;
     border-radius: 10px;
 }
 
