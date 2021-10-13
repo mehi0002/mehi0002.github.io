@@ -32,17 +32,24 @@ ul{
     list-style: square;
 }
 
-h1, h2, h3{
+h1{
     color: #008F86;
     font-family: 'Teko', sans-serif;
+    font-weight: 500;
 }
 
 h2{
+    color: #008F86;
+    font-family: 'Teko', sans-serif;
     font-size: 40pt;
+    font-weight: lighter;
 }
 
 h3{
+    color: #008F86;
+    font-family: 'Teko', sans-serif;
     font-size: 30pt;
+    font-weight:lighter;
 }
 
 #image-heading{
