@@ -1,6 +1,10 @@
-header{
-    width: 500px;
-    height: 300px;
-    border: 1px black;
-    background-image: url("images/lone-starfish-wide.jpg");
+/* background colour so I can see the footprint of each page element for getting the layout right */
+header, h1, h2, h3, p{
+    background-color: rgb(176, 230, 205);
+}
+
+body{
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
