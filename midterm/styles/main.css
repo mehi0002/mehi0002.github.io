@@ -56,13 +56,33 @@ table {
 ****************************************************************************/
 
 /* background colour so I can see the footprint of each page element for getting the layout right */
-header, h1, h2, h3, p{
+header, h2, h3, p{
     background-color: rgb(176, 230, 205);
 }
 
+.container
+{
+    background-color: chocolate;
+}
+
+/************************************************************************
+                        Default Box Sizing
+*************************************************************************/                              
+
+/* Setting default box-sizing */
+html{
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+  }
+
 /************************************************************************
                               Main
-*************************************************************************/                              
+*************************************************************************/
 body{
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,9 +91,8 @@ body{
 
 .container
 {
-    width: 75%;
+    width: 1024px;
     margin: 0 auto;
-    background-color: chocolate;
 }
 
 .header-image{
@@ -81,5 +100,24 @@ body{
 }
 
 .header-title{
-    
+    position: relative;
+    top: 255px;
+    left: 370px;
+    margin-top: -1em;
+}
+
+/************************************************************************
+                              Fonts
+*************************************************************************/
+h1{
+    font-size: 3rem;
+    color: white;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    1.5rem;
 }
