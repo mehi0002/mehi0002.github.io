@@ -51,20 +51,6 @@ table {
 	border-spacing: 0;
 }
 
-/***************************************************************************
-                              Testing                                      
-****************************************************************************/
-
-/* background colour so I can see the footprint of each page element for getting the layout right */
-header, h2, h3, p{
-    background-color: rgb(176, 230, 205);
-}
-
-.container
-{
-    background-color: chocolate;
-}
-
 /************************************************************************
                         Default Box Sizing
 *************************************************************************/                              
@@ -79,6 +65,28 @@ html{
   *:after{
     box-sizing: inherit;
   }
+
+/***************************************************************************
+                              Testing                                      
+****************************************************************************/
+
+/* background colour so I can see the footprint of each page element for getting the layout right */
+header, h2, h3, p{
+    background-color: rgb(176, 230, 205);
+}
+
+.container
+{
+    background-color: chocolate;
+}
+
+a{
+    background-color: violet;
+}
+
+.nav-item{
+    background-color: yellow;
+}
 
 /************************************************************************
                               Main
@@ -106,6 +114,11 @@ body{
     margin-top: -1em;
 }
 
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 /************************************************************************
                               Fonts
 *************************************************************************/
@@ -120,4 +133,24 @@ h2{
 
 h3{
     font-size: 1.5rem;
+}
+
+/************************************************************************
+                              Links
+*************************************************************************/
+nav a{
+    width: 33.33%;
+    padding: 10px 0px;
+    float:left;
+    text-align: center;
+
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+/* Link divider lines on every other link */
+nav a:nth-child(even){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
