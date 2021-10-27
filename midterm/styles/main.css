@@ -103,14 +103,19 @@ body{
     margin: 0 auto;
 }
 
+header{
+    margin-bottom: 2rem;
+}
+
 .header-image{
     width: 100%;
 }
 
 .header-title{
+    display:inline;
     position: relative;
-    top: 255px;
-    left: 370px;
+    bottom: 8.5rem;
+    left: 23rem;
     margin-top: -1em;
 }
 
