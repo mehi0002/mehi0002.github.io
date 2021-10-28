@@ -73,20 +73,16 @@ html{
     content: "";
     display: table;
     clear: both;
+    overflow: auto;
 }
 
 /***************************************************************************
                               Testing                                      
 ****************************************************************************/
 
-/* background colour so I can see the footprint of each page element for getting the layout right */
+/* background colour so I can see the footprint of each page element for getting the layout right 
 header, h2, h3, p{
     background-color: rgb(176, 230, 205);
-}
-
-.container
-{
-    background-color: chocolate;
 }
 
 a{
@@ -96,7 +92,7 @@ a{
 .nav-item{
     background-color: yellow;
 }
-
+*/
 /************************************************************************
                               Main
 *************************************************************************/
@@ -104,16 +100,14 @@ body{
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    line-height: 1.3rem;
 }
 
 .container
 {
+    background-color: #d4e9e7;
     width: 900px;
     margin: 0 auto;
-}
-
-header{
-    margin-bottom: -2rem;
 }
 
 .header-image{
@@ -122,16 +116,24 @@ header{
 
 .header-title{
     position: relative;
-    bottom: 5.5rem;
+    bottom: 6.5rem;
     left: 23rem;
-    margin-top: -1em;
+    margin-top: -0.5em;
 }
 
 .text-wrap-right{
     width:25%;
     float:left;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+li{
+    list-style: inside;
+}
+
+p{
+    overflow:auto;
 }
 
 /************************************************************************
@@ -140,7 +142,7 @@ header{
 
 /*spacing below content sections*/
 main, article, section, header, p{
-    margin: 0em 0em 0.5rem 0em;
+    margin: 0em 0em 0.5em 0em;
 }
 
 main{
@@ -151,6 +153,7 @@ main{
 h2, h3{
     padding: 0.5em 0em 0.25em 0em;
 }
+
 
 /************************************************************************
                               Fonts
