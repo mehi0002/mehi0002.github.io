@@ -32,8 +32,11 @@
 
                 <!--Main article text-->
                 <p class="clearfix">
-                    <!-- Starfish image-->
-                    <img class="text-wrap-right" src="images/lone-starfish.jpg" alt="A starfish">
+
+                    <!-- I wanted to use the figure tag for this image since it's related
+                         to the article, but it caused the image to overflow the end of the
+                         paragraph, even with an overflow: auto style applied -->
+                    <img class="text_wrap_right" src="images/lone-starfish.jpg" alt="A starfish">
 
                     Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. 
                     Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish 
@@ -74,30 +77,31 @@
                 <form action="index.html" method="post">
 
                     <!-- User's name -->
-                    <label for="contact_name">Name</label> 
-                    <input id="contact_name" name="contact_name">
+                    <label for="contact_name" class="own_line">Your Name</label> 
+                    <input type="text" id="contact_name" name="contact_name">
 
                     <!-- User's Email-->
-                    <label for="contact_email">Email</label>
-                    <input id="contact_email" type="email" name="contact_email">
+                    <label for="contact_email" class="own_line">Your Email</label>
+                    <input type="text" id="contact_email" type="email" name="contact_email">
 
                     <!-- User's message-->
-                    <label for="contact_message">Your Message</label>
-                    <input id="contact_message" type="text" name="contact_message">
+                    <label for="contact_message" class="own_line">Your Message</label>
+                    <textarea id="contact_message" name="contact_message" rows="4"></textarea>
 
                     <!-- Would you like to visit the startfish?-->
-                    <p>Would you like to visit the starfish?</p>
-                    <label for="yes">Yes</label>
-                    <input id="yes" type="radio" name="visit_starfish" value="yes">
-                    
-                    <label for="no">No</label>
-                    <input id="no" type="radio" name="visit_starfish" value="no">
-                    
-                    <label for="maybe">Maybe</label>
-                    <input id="maybe" type="radio" name="visit_starfish" value="maybe">
-                                
+                    <h4>Would you like to visit the starfish?</h4>
+                    <div class="radio_group">
+                        <label for="yes">Yes</label>
+                        <input id="yes" type="radio" name="visit_starfish" value="yes">
+                        
+                        <label for="no">No</label>
+                        <input id="no" type="radio" name="visit_starfish" value="no">
+                        
+                        <label for="maybe">Maybe</label>
+                        <input id="maybe" type="radio" name="visit_starfish" value="maybe">
+                    </div>            
                     <!-- submit button-->
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send" class="own_line">
                 </form>
             </aside>
         </main>

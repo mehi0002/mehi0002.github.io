@@ -106,12 +106,13 @@ body{
 .container
 {
     background-color: #d4e9e7;
-    width: 900px;
+    width: 1024px;
     margin: 0 auto;
 }
 
 .header-image{
     width: 100%;
+    height: 300px;
 }
 
 .header-title{
@@ -121,7 +122,7 @@ body{
     margin-top: -0.5em;
 }
 
-.text-wrap-right{
+.text_wrap_right{
     width:25%;
     float:left;
     padding-right: 1em;
@@ -130,6 +131,7 @@ body{
 
 li{
     list-style: inside;
+    line-height: 1em;
 }
 
 p{
@@ -142,7 +144,7 @@ p{
 
 /*spacing below content sections*/
 main, article, section, header, p{
-    margin: 0em 0em 0.5em 0em;
+    margin-bottom: 0.5em;
 }
 
 main{
@@ -150,15 +152,34 @@ main{
 }
 
 /* Padding above and below headers */
-h2, h3{
+h2, h3, h4{
     padding: 0.5em 0em 0.25em 0em;
 }
 
+form{
+    border: 1px solid black;
+    padding: 1.5rem 1rem 1rem 1rem;
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+}
+
+label.own_line{
+    display: block;
+    margin-bottom: 0.15em;
+}
+
+input[type="text"], textarea{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.radio_group{
+    padding: 1em 0em;
+}
 
 /************************************************************************
                               Fonts
 *************************************************************************/
-
 
 h1{
     font-size: 3rem;
@@ -167,12 +188,14 @@ h1{
 
 h2{
     font-size: 2rem;
-    color:black;
 }
 
 h3{
     font-size: 1.5rem;
-    color:black;
+}
+
+h4{
+    font-size: 1.25rem;
 }
 
 /************************************************************************
