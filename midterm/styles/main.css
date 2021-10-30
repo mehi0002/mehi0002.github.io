@@ -80,7 +80,7 @@ html{
                               Testing                                      
 ****************************************************************************/
 
-/* background colour so I can see the footprint of each page element for getting the layout right 
+/* background colours so I can see the footprint of each page element for getting the layout right 
 header, h2, h3, p{
     background-color: rgb(176, 230, 205);
 }
@@ -104,6 +104,7 @@ body{
     margin-top: -8px;
 }
 
+/* Centred content */
 .container
 {
     background-color: #d4e9e7;
@@ -116,6 +117,7 @@ body{
     height: 300px;
 }
 
+/* Floating site title over header image */
 .header-title{
     width: fit-content;
     position: relative;
@@ -124,6 +126,7 @@ body{
     margin-top: -0.5em;
 }
 
+/* Having an image inside a paragraph to the left, with the test wrapping around the right side */
 .text_wrap_right{
     width:25%;
     float:left;
@@ -136,6 +139,7 @@ li{
     line-height: 1em;
 }
 
+/* ensures that floated images/text are fully contained in the paragraph */
 p{
     overflow:auto;
 }
@@ -149,6 +153,7 @@ main, article, aside, section, form, header, p, ul{
     margin: 0.5rem 0rem;
 }
 
+/* pad all the content inside the main area */
 main{
     padding: 0.5rem;
 }
@@ -164,26 +169,6 @@ h3{
 
 h4{
     padding: 0.25em 0em 0.15em 0em;
-}
-
-form{
-    border: 1px solid black;
-    padding: 1.5rem 1rem 1rem 1rem;
-    font-size: 1.1rem;
-}
-
-label.own_line{
-    display: block;
-    margin-bottom: 0.15em;
-}
-
-input[type="text"], textarea{
-    width: 100%;
-    margin-bottom: 1em;
-}
-
-.radio_group{
-    padding: 1em 0em;
 }
 
 /************************************************************************
@@ -210,7 +195,17 @@ h4{
 /************************************************************************
                               Links
 *************************************************************************/
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4a7b82;
+}
+
 nav a{
+    /* Full width navigation bar */
     width: 33.33%;
     padding: 10px 0px;
     float:left;
@@ -218,11 +213,37 @@ nav a{
 
     font-size: 1.5rem;
     color: black;
-    text-decoration: none;
 }
 
 /* Link divider lines on every other link */
 nav a:nth-child(even){
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+/************************************************************************
+                              Forms
+*************************************************************************/
+form{
+    border: 1px solid black;
+    padding: 1.5rem 1rem 1rem 1rem;
+    font-size: 1.1rem;
+}
+
+/* text box/area labels exist on their own line with the input below it */
+label.own_line{
+    display: block;
+    margin-bottom: 0.15em;
+}
+
+/* text boxesareas take up the full width of the form */
+input[type="text"], textarea{
+    width: 100%;
+    margin-bottom: 1em;
+    border: 1px solid #999999;
+}
+
+/* padding around the group of radio selections to give it some separation */ 
+.radio_group{
+    padding: 0.5em 0em 1em;
 }
