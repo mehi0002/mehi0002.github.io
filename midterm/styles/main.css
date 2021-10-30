@@ -144,12 +144,16 @@ p{
     overflow:auto;
 }
 
+footer>p {
+    text-align: right;
+}
+
 /************************************************************************
                               Spacing
 *************************************************************************/
 
 /*Default content spacing*/
-main, article, aside, section, form, header, p, ul{
+main, article, aside, section, form, header, footer, p, ul{
     margin: 0.5rem 0rem;
 }
 
@@ -169,6 +173,10 @@ h3{
 
 h4{
     padding: 0.25em 0em 0.15em 0em;
+}
+
+footer{
+    padding: 0rem 2rem 1rem;
 }
 
 /************************************************************************
