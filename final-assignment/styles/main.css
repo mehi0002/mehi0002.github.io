@@ -65,6 +65,12 @@ form{
 /************** Mobile **************/
 /************************************/
 
+/*********** Global styles ************/
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+}
+
 .section-container{
     padding: 1rem;
 }
