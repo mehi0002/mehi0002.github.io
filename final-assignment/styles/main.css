@@ -68,17 +68,82 @@ form{
 /*********** Global styles ************/
 body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
     color: #222222;
 }
 
+/**** images ****/
+img{
+    width:100%;
+}
+
+/**** Text *****/
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4{
+    margin-top: 1em;
+    margin-bottom:0.5em;
+    font-weight: 700;
+}
+
+p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/**** styling ****/
 .section-container{
     padding: 1rem;
+}
+
+.highlight{
+    background-color:#ffe6ac;
+}
+
+.faded{
+    background-color: rgba(34, 34, 34, 0.65);
+    color: #ffffff;
+}
+
+/* subheading under team member names/titles with line dividing the bio */
+.separated-heading{
+    width: 100%;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #c78b07;
+}
+.separated-heading h3{
+    margin: 0.5em 0em 0.25em 0em;
+}
+
+.separated-heading h4{
+    margin: 0em;
+}
+
+/**************** Targeted Styles ****************/
+
+/******* Header *******/
+header{
+    background-color: #222222;
 }
 
 /**** Logo ****/
 #logo{
     width: 100%;
     background-color: #c78b07;
+}
+
+#logo img{
+    width:auto;
 }
 
 /***** navigation bar *****/
@@ -118,12 +183,15 @@ background-color: #c78b07;
     
 }
 
-/******* Header *******/
-header{
-    background-color: #222222;
-}
-
+/******** Welcome **********/
 #home{
     background-image: url(../images/main-banner.jpg);
     background-size:cover;
+    padding-right: 0px;
+    padding-left: 0px;
 }
+
+#home div{
+    padding: 1rem;
+}
+

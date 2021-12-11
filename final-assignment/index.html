@@ -11,8 +11,8 @@
         <!-- Open sans font linked from Google-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
         <!-- Stylesheet for the fico icons-->
         <link rel="stylesheet" href="styles/icons.css">
     
@@ -53,10 +53,7 @@
 
                 <!-- Home Section flex box. main-banner image BG-->
                 <div class="section-container" id="home">
-
-                    <!-- low opacity BG-->
-                    <article>
-
+                    <div class="faded">
                         <!-- Welcome Message-->
                         <h1>Welcome to Three Star Media</h1>
                         <p>
@@ -66,20 +63,19 @@
 
                         <!-- Connect with Us - Button linked to the contact section-->
                         <a href="#contact">Connect with Us <i class="icon icon-right"></i></a>
-
-                    </article>
+                    </div>
                 </div>
             </header>
 
             <!-- About Section -->
-            <div class="section-container">
+            <div class="section-container highlight">
 
                 <article id="about"> 
                     <!-- About Us image content-->
                     <img class="half-width" src="images/about-us.jpg" alt="">
 
                     <!-- About Us text content-->
-                    <div class="text-container"> 
+                    <section class="text-container"> 
                         <h2>About Us</h2>
 
                         <p>
@@ -98,7 +94,7 @@
                             malesuada fames ac turpis egestas. Mauris blandit placerat feugiat. Proin sodales sollicitudin 
                             diam nec condimentum.
                         </p>
-                    </div>
+                    </section>
                 </article>
             </div>
 
@@ -109,7 +105,7 @@
                     <h2>Our Services</h2>
 
                     <!-- Digital Transformation-->
-                    <section class="half-width">
+                    <section class="half-width highlight">
                         <img src="images/digital.jpg" alt="">
                     
                         <!-- Digital Transformation Description-->
@@ -130,7 +126,7 @@
                     </section>
 
                    <!-- Marketing-->
-                   <section class="half-width">
+                   <section class="half-width highlight">
                         <img src="images/marketing.jpg" alt="">
                 
                         <!-- Marketing Description-->
@@ -151,7 +147,7 @@
                     </section>
 
                     <!-- Video Production-->
-                    <section class="third-width">
+                    <section class="third-width highlight">
                         <img src="images/video.jpg" alt="">
                 
                         <!-- Video Production Description-->
@@ -172,7 +168,7 @@
                     </section>
 
                     <!-- Web Development-->
-                    <section class="third-width">
+                    <section class="third-width highlight">
                         <img src="images/web.jpg" alt="">
                     
                         <!-- Web Development Description-->
@@ -193,7 +189,7 @@
                     </section>
 
                     <!-- Print -->
-                    <section class="third-width">
+                    <section class="third-width highlight">
                         <img src="images/print.jpg" alt="">
                 
                         <!-- Print Description-->
@@ -242,12 +238,14 @@
                     <h2>Our Team</h2>
 
                     <!-- John Doe -->
-                    <section>
+                    <section class="highlight">
                         <img class="half-width no-bleed" src="images/john.jpg" alt="John Doe">
                         
                         <div class="half-width text-container no-bleed">
-                            <h3>John Doe</h3>
-                            <h4 class="divider">CEO and Co-owner</h4>
+                            <div class="separated-heading">
+                                <h3>John Doe</h3>
+                                <h4 class="divider">CEO and Co-owner</h4>
+                            </div>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet mattis ante. 
                                 Duis dapibus finibus interdum. Phasellus eleifend eget sapien at hendrerit. Vestibulum 
@@ -260,12 +258,14 @@
                     </section>
 
                     <!-- Bob Rite -->
-                    <section>
+                    <section class="highlight">
                         <img class="half-width no-bleed" src="images/bob.jpg" alt="Bob Rite">
                         
                         <div class="half-width text-container no-bleed">
-                            <h3>Bob Rite</h3>
-                            <h4 class="divider">CFO and Co-owner</h4>
+                            <div class="separated-heading">
+                                <h3>Bob Rite</h3>
+                                <h4>CFO and Co-owner</h4>
+                            </div>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet mattis ante. 
                                 Duis dapibus finibus interdum. Phasellus eleifend eget sapien at hendrerit. Vestibulum 
@@ -313,7 +313,7 @@
 
                         <table>
                             <caption><h3>Hours of operation</h3></caption>
-                            <thead>
+                            <thead class="highlight">
                               <tr>
                                 <th>Days</th>
                                 <th>Hours</th>
