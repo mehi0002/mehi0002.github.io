@@ -101,7 +101,7 @@ p{
     margin-bottom: 1em;
 }
 
-/**** styling ****/
+/**** global styling ****/
 .section-container, .text-container{
     padding:0.5rem;
 }
@@ -115,7 +115,8 @@ p{
     color: #ffffff;
 }
 
-/* subheading under team member names/titles with line dividing the bio */
+/* subheading under team member names/titles 
+   with a line dividing the bio */
 .separated-heading{
     width: 100%;
     padding-bottom: 0.25rem;
@@ -169,7 +170,6 @@ background-color: #c78b07;
 #search{
     display: flex;
     height: 1.5rem;
-    margin-bottom: -5rem;
 }
 
 #search input{
@@ -187,11 +187,7 @@ background-color: #c78b07;
 #home{
     background-image: url(../images/main-banner.jpg);
     background-size:cover;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 3rem 0rem;
 }
 
-#home div{
-    padding: 1rem;
-}
 
