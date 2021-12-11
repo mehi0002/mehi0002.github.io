@@ -91,7 +91,7 @@ h3{
 }
 
 h1, h2, h3, h4{
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-bottom:0.5em;
     font-weight: 700;
 }
@@ -102,8 +102,8 @@ p{
 }
 
 /**** styling ****/
-.section-container{
-    padding: 1rem;
+.section-container, .text-container{
+    padding:0.5rem;
 }
 
 .highlight{
