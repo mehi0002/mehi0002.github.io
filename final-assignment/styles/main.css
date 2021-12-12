@@ -49,17 +49,10 @@ table {
 }
 
 /************** Testing *************/
-#container{
-    background-color: aqua;
-}
-
 .section-container{
     border: 1px solid royalblue;
 }
 
-form{
-    border: 1px solid pink;
-}
 
 /************************************/
 /************** Mobile **************/
@@ -116,6 +109,12 @@ p{
     color: #ffffff;
 }
 
+.img-bg{
+    background-size:cover;
+    background-attachment: local;
+    background-position: center;
+}
+
 /* Separated (sub)heading */
 .separated-heading{
     width: 100%;
@@ -142,6 +141,10 @@ a.button {
 a.highlighted-button{
     color: #222222;
     background-color: #c78b07;
+}
+
+a.blue-button{
+    border: 1px solid #c78b07
 }
 
 /**************** Targeted Styles ****************/
@@ -200,6 +203,10 @@ background-color: #c78b07;
 /******** Welcome **********/
 #home{
     background-image: url(../images/main-banner.jpg);
-    background-size:cover;
     padding: 3rem 0rem;
+}
+
+#vision{
+    background-image: url(../images/vision.jpg);
+    color: #ffffff;
 }
