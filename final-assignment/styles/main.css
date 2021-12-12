@@ -78,6 +78,12 @@ img{
 }
 
 /**** Text *****/
+h1, h2, h3, h4{
+    margin-top: 0.5em;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
 h1{
     font-size: 3rem;
 }
@@ -90,18 +96,13 @@ h3{
     font-size: 1.5rem;
 }
 
-h1, h2, h3, h4{
-    margin-top: 0.5em;
-    margin-bottom:0.5em;
-    font-weight: 700;
-}
-
 p{
     margin-top: 1em;
     margin-bottom: 1em;
+    line-height: 1.5em;
 }
 
-/**** global styling ****/
+/*** containers ****/
 .section-container, .text-container{
     padding:0.5rem;
 }
@@ -115,8 +116,7 @@ p{
     color: #ffffff;
 }
 
-/* subheading under team member names/titles 
-   with a line dividing the bio */
+/* Separated (sub)heading */
 .separated-heading{
     width: 100%;
     padding-bottom: 0.25rem;
@@ -128,6 +128,20 @@ p{
 
 .separated-heading h4{
     margin: 0em;
+}
+
+/**** button styles ****/
+a.button {
+    color: #ffffff;
+    text-decoration: none;    
+    background-color: #222222;
+    display:inline-block;
+    padding: 1rem;
+}
+
+a.highlighted-button{
+    color: #222222;
+    background-color: #c78b07;
 }
 
 /**************** Targeted Styles ****************/
@@ -189,5 +203,3 @@ background-color: #c78b07;
     background-size:cover;
     padding: 3rem 0rem;
 }
-
-
