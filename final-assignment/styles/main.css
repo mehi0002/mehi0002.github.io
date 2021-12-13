@@ -115,6 +115,22 @@ p{
     background-position: center;
 }
 
+/**** Forms ****/
+input, textarea, label{
+    display:block;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: auto;
+    padding: 0.25em;
+}
+
+label, input[type="submit"]{
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
 /* Separated (sub)heading */
 .separated-heading{
     width: 100%;
@@ -130,7 +146,7 @@ p{
 }
 
 /**** button styles ****/
-a.button {
+.button {
     color: #ffffff;
     text-decoration: none;    
     background-color: #222222;
@@ -138,13 +154,20 @@ a.button {
     padding: 1rem;
 }
 
-a.highlighted-button{
+.highlighted-button{
     color: #222222;
     background-color: #c78b07;
 }
 
-a.blue-button{
+.blue-button{
     border: 1px solid #c78b07
+}
+
+.gold-button{
+    color: #c78b07;
+    border: 1px solid #c78b07;
+    background: #222222;
+    
 }
 
 /**************** Targeted Styles ****************/
@@ -191,13 +214,6 @@ background-color: #c78b07;
 
 #search input{
     flex-basis: 100% ;
-}
-
-#search button{
-    color: #c78b07;
-    border: 1px solid #c78b07;
-    background: none;
-    
 }
 
 /******** Welcome **********/
