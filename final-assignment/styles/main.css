@@ -113,6 +113,11 @@ a{
     text-decoration: none;
 }
 
+section{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 /*** containers ****/
 #container{
     max-width:1200px;
@@ -277,11 +282,6 @@ background-color: #c78b07;
 /****** Services *****/
 #services{
     background-color: #ffffff;
-}
-
-#services section{
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
 }
 
 /****** Vision *******/
