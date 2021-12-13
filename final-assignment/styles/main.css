@@ -1,4 +1,4 @@
-/************* CSS Reset ***************/
+/********************** CSS Reset *************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,21 +48,34 @@ table {
 	border-spacing: 0;
 }
 
-/************** Testing *************/
+/*********************** Border Box **************************/
+/* Setting default box-sizing */
+html{
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+  }
+
+/************** Testing ************
 .section-container{
     border: 1px solid royalblue;
 }
+*/
 
-
-/************************************/
-/************** Mobile **************/
-/************************************/
+/*****************************************************************
+ ***************** Mobile/Default Version ************************
+ *****************************************************************/
 
 /*********** Global styles ************/
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-    color: #222222;
+    background-color: #222222;
+
 }
 
 /**** images ****/
@@ -95,7 +108,19 @@ p{
     line-height: 1.5em;
 }
 
+/*** Links ****/
+a{
+    text-decoration: none;
+}
+
 /*** containers ****/
+#container{
+    max-width:1200px;
+    margin: auto;
+    background-color: #ffffff;
+    color: #222222;
+}
+
 .section-container, .text-container{
     padding:0.5rem;
 }
@@ -183,32 +208,42 @@ td, th{
     padding: 1em;
     border: 1px solid black;
 }
+
+/***** Embedded Media ****/
+iframe{
+    width: 100%;
+}
+
 /**************** Targeted Styles ****************/
 
-/******* Header *******/
-header{
+/******* Header/Footer *******/
+header, footer{
     background-color: #222222;
+    color:#c78b07
+}
+
+/******** Navigation Bar *********/
+header .section-container{
+    background-color: #222222;
+}
+
+nav{
+    background-color: #c78b07;
+    display: flex;
+    flex-direction: column;
 }
 
 /**** Logo ****/
 #logo{
-    width: 100%;
-    background-color: #c78b07;
-}
-
-#logo img{
     width:auto;
+    margin-right: auto;
 }
 
-/***** navigation bar *****/
-nav{
-    display:grid;
-    grid-template-rows: repeat(5, 1fr) 0.5fr;
-    grid-template-columns: 1;
-}
-
+/*** nav links ***/
 nav a{
+    width:100%;
     padding: 1em;
+    background-color: #222222;
     color: #c78b07;
     text-align:center;
     text-decoration: none;
@@ -219,7 +254,7 @@ color: #222222;
 background-color: #c78b07;
 }
 
-/*********** Search Bar **********/
+/*** Search Bar ****/
 #search{
     display: flex;
     height: 1.5rem;
@@ -229,13 +264,38 @@ background-color: #c78b07;
     flex-basis: 100% ;
 }
 
-/******** Welcome **********/
+/********** Welcome **************/
 #home{
     background-image: url(../images/main-banner.jpg);
     padding: 3rem 0rem;
 }
 
+/****** Vision *******/
 #vision{
     background-image: url(../images/vision.jpg);
     color: #ffffff;
 }
+
+/**** Footer ****/
+footer a, footer a:visited, footer a:hover, footer a:active{
+    color:#c78b07
+}
+
+/******************************************************************
+ ********************** Destop Version ****************************
+ ******************************************************************/
+
+ @media screen and (min-width:760px){
+    nav, .nav-bar{
+        display:flex;
+        flex-direction: row;
+    }
+
+    nav a, .header-flex-item, #logo{
+        width:fit-content;
+    }
+
+    img.header{
+        width: auto;
+    }
+ }
