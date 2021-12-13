@@ -140,6 +140,10 @@ a{
     background-position: center;
 }
 
+.dark{
+    background-color: #222222;
+}
+
 /**** Forms ****/
 input, textarea, label{
     display:block;

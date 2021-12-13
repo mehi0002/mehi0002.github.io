@@ -22,50 +22,50 @@
 
         <!-- Site container, needed to constrain content on larger screens-->
         <div id="container">
+                
+            <div class="section-container dark">
 
-            <header>
-
-                <!-- Header -->
-                <div class="section-container" >
+                <!-- Navigation Bar-->
+                <nav class="header-flex-item">
                     
-                    <!-- Navigation Bar-->
-                    <nav class="header-flex-item">
-                        <img id="logo" src="images/logo.png" alt="">
+                    <!-- Logo -->
+                    <img id="logo" src="images/logo.png" alt="">
+                    
+                    <!-- Navigation Links -->
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>
 
-                        <!-- Navigation Links-->
-                        <a href="#home">Home</a>
-                        <a href="#about">About Us</a>
-                        <a href="#services">Services</a>
-                        <a href="#team">Team</a>
-                        <a href="#contact">Contact</a>
+                    <!-- Search Bar-->
+                    <form id="search" action="index.html" method="post">
+                        <input type="text" placeholder="Search" name="search">                           
+                        <button type="submit" class=" gold-button"><i class="icon icon-zoom"></i></button>
+                    </form>
+                </nav>
+            </div>
 
-                        <!-- Search Bar-->
-                        <form id="search" action="index.html" method="post">
-                            <input type="text" placeholder="Search" name="search">                           
-                            <button type="submit" class=" gold-button"><i class="icon icon-zoom"></i></button>
-                        </form>
-                    </nav>
+            <!-- Header -->
+            <header class="section-container img-bg" id="home">    
+                
+                <div class="faded text-container">
+                    
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Pellentesque bibendum dignissim feugiat. 
+                        Nam rutrum neque id consectetur molestie. Praesent pretium 
+                        luctus felis quis sagittis. Donec vulputate laoreet tortor, 
+                        at ornare justo luctus vel. Nullam dictum purus et aliquam 
+                        semper. Ut varius feugiat erat, et tincidunt sem imperdiet a. 
+                        Mauris non malesuada elit.
+                    </p>
+                   
+                    <!-- Connect with Us - Button linked to the contact section-->
+                    <a href="#contact" class="button highlighted-button">Connect with Us <i class="icon icon-right"></i></a>
                 </div>
-
-                <!-- Welcome Section -->
-                <div class="section-container img-bg" id="home">
-                    <div class="faded text-container">
-                        
-                        <h1>Welcome to Three Star Media</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Pellentesque bibendum dignissim feugiat. 
-                            Nam rutrum neque id consectetur molestie. Praesent pretium 
-                            luctus felis quis sagittis. Donec vulputate laoreet tortor, 
-                            at ornare justo luctus vel. Nullam dictum purus et aliquam 
-                            semper. Ut varius feugiat erat, et tincidunt sem imperdiet a. 
-                            Mauris non malesuada elit.
-                        </p>
-
-                        <!-- Connect with Us - Button linked to the contact section-->
-                        <a href="#contact" class="button highlighted-button">Connect with Us <i class="icon icon-right"></i></a>
-                    </div>
-                </div>
+            
             </header>
 
             <!-- About Section -->
