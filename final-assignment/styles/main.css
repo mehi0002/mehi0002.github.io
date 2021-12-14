@@ -299,25 +299,23 @@ footer a, footer a:visited, footer a:hover, footer a:active{
  ******************************************************************/
 
  @media screen and (min-width:760px){
-    
-    #nav-bar{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
 
-    /***** Horizontal navigation bar ******/
+    body{
+        font-size: 16px;
+    }
+    
+    /******************* Navigation ***********************/
+
+    /* flex container for logo, nav, and search bar */
     #nav-bar{
         background:#222222;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
     }
     
+    /* flex container for the nav links and search bar */
     nav{
-        background-color: #222222;
         flex-basis:content;
         flex-grow: 1;
         flex-direction: row;
@@ -325,19 +323,23 @@ footer a, footer a:visited, footer a:hover, footer a:active{
         justify-content:center;
     }
 
+    /* Have nav links grow to fit size of page */
     nav a{
         padding: 1em;
         flex-grow: 1;
+        text-align: center;
     }
 
+    /* don't let flex items get smaller than their content */
     .nav-flex-item{
         flex-basis: content;
     }
 
-    
-
+    /* give the logo a bit of separation from the nav */
     #logo{
-        margin: 0px;
+        margin-right: 2.5rem;
     }
+
+
 
  }
