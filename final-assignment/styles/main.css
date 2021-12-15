@@ -310,11 +310,21 @@ footer a, footer a:visited, footer a:hover, footer a:active{
         font-size: 12px;
     }
 
+    section{
+        margin: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    /*** Buttons ***/
     .button{
         padding: 2em;
     }
 
-
+    .full-width{
+        display:block;
+        text-align: center;
+    }
     
 /******************** Targeted Styles *********************/
 
@@ -353,6 +363,7 @@ footer a, footer a:visited, footer a:hover, footer a:active{
         margin-right: 2.5rem;
     }
 
+    /******* About Section ******/
     #about{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -363,14 +374,41 @@ footer a, footer a:visited, footer a:hover, footer a:active{
         margin: 0rem;
     }
 
-    #about section{
-        margin: 0rem;
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-    }
-
     #about img{
         height: 100%;
     }
 
+    /******** Services ***********/
+    #services .grid-container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    #services .half-width:nth-child(1){
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    #services .half-width:nth-child(2){
+        grid-column-start: 4;
+        grid-column-end: span 3;
+    }
+
+    #services .third-width:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 2;
+    }
+
+    #services .third-width:nth-child(4){
+        grid-column-start: 3;
+        grid-column-end: span 2;
+    }
+
+    #services .third-width:nth-child(5){
+        grid-column-start: 5;
+        grid-column-end: span 2;
+    }
  }
