@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/*********************** Border Box **************************
+/*********************** Border Box **************************/
 html{
     box-sizing: border-box;
   }
@@ -58,7 +58,7 @@ html{
   *:after{
     box-sizing: inherit;
   }
-*/
+
 
 /************** Testing ************
 .section-container{
@@ -74,6 +74,7 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+    font-weight: 600;
     background-color: #222222;
 
 }
@@ -99,14 +100,13 @@ h2{
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 p{
     margin-top: 1em;
     margin-bottom: 1em;
     line-height: 1.5em;
-    font-weight: 600;
 }
 
 .faded p{
@@ -256,6 +256,7 @@ nav{
 /*** nav links ***/
 nav a{
     padding: 1em;
+    font-weight: 400;
     background-color: #222222;
     color: #c78b07;
     text-align:center;
@@ -280,8 +281,8 @@ background-color: #c78b07;
 /********** Welcome **************/
 #home{
     background-image: url(../images/main-banner.jpg);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /****** Services *****/
@@ -333,6 +334,14 @@ footer a, footer a:visited, footer a:hover, footer a:active{
         display:block;
         text-align: center;
     }
+
+    .grid-container{
+        display:grid;
+    }
+
+    .separated-heading h3{
+        margin: 0em;
+    }
     
 /******************** Targeted Styles *********************/
 
@@ -368,7 +377,7 @@ footer a, footer a:visited, footer a:hover, footer a:active{
 
     /* give the logo a bit of separation from the nav */
     #logo{
-        margin-right: 2.5rem;
+        margin-right: 1.5rem;
     }
 
     /******* About Section ******/
@@ -387,6 +396,10 @@ footer a, footer a:visited, footer a:hover, footer a:active{
     }
 
     /******** Services ***********/
+    #services h3{
+        font-size: 1.25rem;
+    }
+    
     #services .grid-container{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -395,6 +408,7 @@ footer a, footer a:visited, footer a:hover, footer a:active{
         margin: 0.5rem 0rem;
     }
 
+    /* Position the half sized content boxes */
     #services .half-width:nth-child(1){
         grid-column-start: 1;
         grid-column-end: span 3;
@@ -403,6 +417,11 @@ footer a, footer a:visited, footer a:hover, footer a:active{
     #services .half-width:nth-child(2){
         grid-column-start: 4;
         grid-column-end: span 3;
+    }
+
+    /* Position the 3rd width content boxes */
+    #services .third-width{
+        height:fit-content;
     }
 
     #services .third-width:nth-child(3){
@@ -421,17 +440,42 @@ footer a, footer a:visited, footer a:hover, footer a:active{
         grid-column-end: span 2;
     }
 
-    /***** Our Team ****/
-    #team section:nth-child(odd){
-        display:flex;
-        flex-direction: row;
+    /******* Our Team ********/
+    #team .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    #team section:nth-child(even){
-        display:flex;
-        flex-direction: row-reverse;
+    /* Reverse the img/content box for the second bio */
+    #team .reversed .half-width:nth-child(2){
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
+    /******* Contact ********/
+    #contact .grid-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        gap: 0.5rem;
+    }
 
+    /* side by side contact containers */
+    #contact .half-width:nth-child(1){
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+ 
+    #contact .half-width:nth-child(2){
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    /* hours of operation table, full width */
+    #contact .grid-container .full-width-grid{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: span 2;
+    }
 
  }
